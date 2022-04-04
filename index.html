@@ -54,7 +54,7 @@
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="main-btn btn" type="button">Заказать услугу</button>
+                <button class="main-btn btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
          </section>
 
@@ -113,14 +113,23 @@
                 <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="examples-list">
                     <li class="examples-item">
-                        <img class="examples-pic" src="./images/box1.jpg" alt="Код на экране планшета" width="370" />
+                        <div class="examples-thumb">
+                            <img class="examples-pic" src="./images/box1.jpg" alt="Код на экране планшета" width="370" />
+                            <p class="examples-pic-descr">Десктопные приложения</p>
+                        </div>
                     </li>
                     <li class="examples-item">
-                        <img class="examples-pic" src="./images/box2.jpg" alt="Дизайны интерфейса мобильного приложения"
-                            width="370" />
+                        <div class="examples-thumb">
+                            <img class="examples-pic" src="./images/box2.jpg" alt="Дизайны интерфейса мобильного приложения"
+                                width="370" />
+                            <p class="examples-pic-descr">Мобильные приложения</p>
+                        </div>
                     </li>
                     <li class="examples-item">
-                        <img class="examples-pic" src="./images/box3.jpg" alt="Палитра цветов на планшете" width="370" />
+                        <div class="examples-thumb">
+                            <img class="examples-pic" src="./images/box3.jpg" alt="Палитра цветов на планшете" width="370" />
+                            <p class="examples-pic-descr">Дизайнерские решения</p>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -392,5 +401,15 @@
             </div>
         </div>
     </footer>
+    <!-- Модальное окно -->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal-wrapper">
+            <button class="modal-btn" type="button" data-modal-close>X</button>
+        </div>
+    </div>
+    
+    <script src="./modal.js"></script>
+
+
 </body>
 </html>
