@@ -401,15 +401,18 @@
             </div>
         </div>
     </footer>
-    <!-- Модальное окно -->
+
+    <!-- Модальне вікно -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal-wrapper">
-            <button class="modal-btn" type="button" data-modal-close>X</button>
+            <button class="modal-btn" type="button" data-modal-close>
+               <svg class="modal-btn-icon" height='11px' width='11px'>
+                    <use href="./images/icons.svg#close"></use>
+                </svg>
+            </button>
         </div>
     </div>
     
     <script src="./modal.js"></script>
-
-
 </body>
 </html>
