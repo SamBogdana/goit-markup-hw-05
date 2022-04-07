@@ -120,11 +120,11 @@ img {
 
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -1px;
 
   display: block;
   width: 100%;
-  height: 5px;
+  height: 4px;
   background-color: var(--accent-color);
   border-radius: 2px;
 }
@@ -306,19 +306,21 @@ img {
   bottom: 0;
   left: 0;
 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--title-text-color);
-  text-align: center;
 
   background-color: rgba(47, 48, 58, 0.8);
 
   width: 100%;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  height: 70px;
 }
 
 .team {
@@ -611,7 +613,8 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.catalog-item:hover .catalog-pic-descr {
+.catalog-item:hover .catalog-pic-descr,
+.catalog-item:focus .catalog-pic-descr {
   transform: translateY(0);
 }
 
@@ -619,11 +622,10 @@ img {
 .contacts-link,
 .adress-link,
 .social-link,
-.social-icon,
 .clients-link,
-.clients-icon,
 .portgolio-btn,
 .catalog-link {
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -642,7 +644,8 @@ img {
   visibility: visible;
   pointer-events: initial;
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
