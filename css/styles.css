@@ -618,10 +618,10 @@ img {
   transform: translateY(0);
 }
 
+.social-icon,
 .nav-link,
 .contacts-link,
 .adress-link,
-.social-link,
 .clients-link,
 .portgolio-btn,
 .catalog-link {
