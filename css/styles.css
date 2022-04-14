@@ -613,8 +613,8 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.catalog-item:hover .catalog-pic-descr,
-.catalog-item:focus .catalog-pic-descr {
+.catalog-link:hover .catalog-pic-descr,
+.catalog-link:focus .catalog-pic-descr {
   transform: translateY(0);
 }
 
